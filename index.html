@@ -1,146 +1,305 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Apna Facebook, Instagram ya YouTube Account Becho – 0 Follower bhi chalega</title>
-<meta name="description" content="Facebook Page, Instagram Account ya YouTube Channel sell karein. 0 follower bhi chalega. Safe process, quick payment.">
+<title>The Chart Zone FX | Forex, Gold &amp; BTC Market Insights</title>
+<meta name="description" content="Join The Chart Zone FX on Telegram for Forex, Gold (XAUUSD) and Bitcoin market insights, chart analysis and trade ideas.">
+<meta name="theme-color" content="#05070d">
+<meta property="og:title" content="The Chart Zone FX – Forex, Gold &amp; BTC Market Insights">
+<meta property="og:description" content="Chart analysis and trade ideas on Forex, XAUUSD and Bitcoin. Join free on Telegram.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2305070d'/%3E%3Cpath d='M12 44l12-14 10 8 18-22' fill='none' stroke='%23f5c451' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#05070d; --bg2:#0a0f1c; --line:rgba(120,160,255,.14);
+  --blue:#1e90ff; --blue2:#00c2ff; --gold:#f5c451; --gold2:#ffdf8a;
+  --text:#eef3ff; --mute:#8d9bb8; --up:#22d38a; --down:#ff5c6c;
+  --tg1:#2aabee; --tg2:#1b7fd6;
+  --disp:"Bahnschrift","DIN Alternate","Arial Narrow","Segoe UI",system-ui,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.55;overflow-x:hidden;
+  padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+body::before{content:"";position:fixed;inset:0;z-index:-2;
+  background:
+   radial-gradient(900px 500px at 85% -5%,rgba(30,144,255,.22),transparent 60%),
+   radial-gradient(700px 420px at -5% 35%,rgba(245,196,81,.09),transparent 60%),var(--bg)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:.5;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 50% 0,#000 10%,transparent 70%);mask-image:radial-gradient(ellipse at 50% 0,#000 10%,transparent 70%)}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 
-<!-- Meta Pixel Code -->
+/* Ticker */
+.ticker{border-bottom:1px solid var(--line);background:rgba(5,7,13,.8);overflow:hidden;white-space:nowrap;font-family:var(--disp);font-size:13px;letter-spacing:.04em}
+.ticker-track{display:inline-flex;gap:38px;padding:9px 0;animation:tick 38s linear infinite}
+.ticker span{color:var(--mute)}.ticker b{color:var(--text);font-weight:600;margin-left:6px}
+.up{color:var(--up)!important}.dn{color:var(--down)!important}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* Nav */
+nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.logo{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-weight:700;font-size:19px;letter-spacing:.06em}
+.logo svg{width:34px;height:34px}
+.logo em{font-style:normal;color:var(--gold)}
+.nav-cta{font-family:var(--disp);font-size:13px;font-weight:700;letter-spacing:.06em;padding:10px 16px;border-radius:999px;border:1px solid var(--gold);color:var(--gold);transition:.25s}
+.nav-cta:hover{background:var(--gold);color:#111}
+
+/* Hero */
+.hero{padding:34px 0 60px;display:grid;gap:36px;grid-template-columns:1fr;align-items:center}
+.live{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--gold2);border:1px solid rgba(245,196,81,.35);background:rgba(245,196,81,.07);padding:7px 14px;border-radius:999px;margin-bottom:20px}
+.live i{width:8px;height:8px;border-radius:50%;background:var(--up);box-shadow:0 0 0 0 rgba(34,211,138,.7);animation:pulse 1.8s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(34,211,138,0)}100%{box-shadow:0 0 0 0 rgba(34,211,138,0)}}
+h1{font-family:var(--disp);font-weight:800;font-size:clamp(34px,8.6vw,64px);line-height:1.04;letter-spacing:-.01em;text-transform:uppercase}
+h1 .g{background:linear-gradient(95deg,var(--gold2),var(--gold) 55%,#d89b1c);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 .b{background:linear-gradient(95deg,var(--blue2),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{margin:20px 0 28px;color:#b6c2dc;font-size:clamp(16px,4.2vw,19px);max-width:520px}
+.sub strong{color:var(--text);font-weight:600}
+
+/* Telegram button */
+.tg{position:relative;display:flex;align-items:center;justify-content:center;gap:14px;width:100%;max-width:520px;
+  padding:22px 26px;border-radius:18px;color:#fff;font-family:var(--disp);font-weight:800;
+  font-size:clamp(17px,4.6vw,21px);letter-spacing:.05em;text-transform:uppercase;text-align:center;
+  background:linear-gradient(135deg,var(--tg1),var(--tg2) 60%,#1560c0);
+  border:1px solid rgba(255,255,255,.28);
+  box-shadow:0 0 0 0 rgba(42,171,238,.55),0 14px 40px -8px rgba(30,144,255,.75),inset 0 1px 0 rgba(255,255,255,.35);
+  overflow:hidden;isolation:isolate;cursor:pointer;-webkit-tap-highlight-color:transparent;
+  animation:glow 2.4s ease-in-out infinite;transition:transform .2s cubic-bezier(.2,.8,.2,1),filter .2s}
+.tg::before{content:"";position:absolute;top:0;bottom:0;width:60px;left:-90px;z-index:-1;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:shine 3.2s ease-in-out infinite}
+.tg svg{width:34px;height:34px;flex:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3))}
+.tg:hover{transform:translateY(-3px) scale(1.025);filter:brightness(1.1)}
+.tg:active{transform:scale(.96);filter:brightness(.95)}
+@keyframes glow{50%{box-shadow:0 0 0 10px rgba(42,171,238,0),0 18px 54px -6px rgba(0,194,255,.95),inset 0 1px 0 rgba(255,255,255,.35)}}
+@keyframes shine{0%,55%{left:-90px}100%{left:120%}}
+.note{margin-top:14px;font-size:13.5px;color:var(--mute);display:flex;gap:16px;flex-wrap:wrap}
+.note span::before{content:"✓";color:var(--up);margin-right:6px;font-weight:700}
+
+/* Hero chart card */
+.board{border:1px solid var(--line);border-radius:22px;background:linear-gradient(180deg,rgba(15,24,45,.85),rgba(8,12,22,.9));padding:18px;box-shadow:0 30px 70px -30px rgba(30,144,255,.45)}
+.board-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;font-family:var(--disp)}
+.board-h b{font-size:17px;letter-spacing:.04em}.board-h b small{color:var(--gold);font-size:12px;margin-left:8px;font-weight:600}
+.board-h span{font-size:13px;color:var(--up)}
+.board svg{display:block;width:100%;height:auto}
+.tabs{display:flex;gap:8px;margin-top:10px;font-size:12px;color:var(--mute);font-family:var(--disp)}
+.tabs span{padding:4px 10px;border-radius:8px;border:1px solid var(--line)}
+.tabs span:nth-child(2){color:var(--gold);border-color:rgba(245,196,81,.5)}
+
+/* Markets */
+section{padding:56px 0}
+h2{font-family:var(--disp);font-size:clamp(26px,6vw,40px);text-transform:uppercase;line-height:1.1;margin-bottom:10px}
+.lead{color:var(--mute);max-width:560px;margin-bottom:30px}
+.markets{display:grid;gap:16px;grid-template-columns:1fr}
+.mk{position:relative;border:1px solid var(--line);border-radius:20px;padding:22px;background:linear-gradient(160deg,rgba(18,28,52,.7),rgba(8,12,22,.9));overflow:hidden;transition:transform .25s,border-color .25s}
+.mk:hover{transform:translateY(-4px)}
+.mk.fx:hover{border-color:var(--blue)}.mk.au:hover{border-color:var(--gold)}.mk.bt:hover{border-color:#f7931a}
+.mk .ic{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;margin-bottom:14px;font-family:var(--disp);font-weight:800;font-size:22px}
+.fx .ic{background:rgba(30,144,255,.15);color:var(--blue2);border:1px solid rgba(30,144,255,.4)}
+.au .ic{background:rgba(245,196,81,.14);color:var(--gold);border:1px solid rgba(245,196,81,.45)}
+.bt .ic{background:rgba(247,147,26,.14);color:#f7931a;border:1px solid rgba(247,147,26,.45)}
+.mk h3{font-family:var(--disp);font-size:22px;letter-spacing:.03em}
+.mk p{color:var(--mute);font-size:15px;margin-top:4px}
+.mk .pair{margin-top:14px;font-family:var(--disp);font-size:13px;color:var(--text);opacity:.8}
+.mk svg.sp{position:absolute;right:14px;top:18px;width:110px;height:44px;opacity:.9}
+
+/* Value */
+.vals{display:grid;gap:12px;grid-template-columns:1fr}
+.val{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border-left:3px solid var(--gold);background:rgba(255,255,255,.03);border-radius:0 14px 14px 0}
+.val b{display:block;font-family:var(--disp);font-size:18px;letter-spacing:.02em}
+.val span{color:var(--mute);font-size:15px}
+
+/* Final CTA */
+.final{margin:20px 0 50px;text-align:center;padding:44px 20px;border-radius:26px;border:1px solid rgba(245,196,81,.35);
+  background:radial-gradient(600px 260px at 50% 0,rgba(30,144,255,.28),transparent 70%),linear-gradient(180deg,#0b1224,#070a13)}
+.final h2{margin-bottom:12px}
+.final p{color:#b6c2dc;margin:0 auto 26px;max-width:460px}
+.final .tg{margin:0 auto}
+
+/* Footer */
+footer{border-top:1px solid var(--line);padding:34px 0 26px;color:var(--mute);font-size:12.5px;line-height:1.7}
+footer .risk{border:1px solid rgba(245,196,81,.3);background:rgba(245,196,81,.05);border-radius:14px;padding:16px 18px;margin-bottom:20px}
+footer .risk b{color:var(--gold);display:block;margin-bottom:6px;font-family:var(--disp);letter-spacing:.06em;font-size:13px}
+footer .copy{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
+/* Sticky mobile CTA */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:12px 14px calc(12px + env(safe-area-inset-bottom,0px));
+  background:linear-gradient(180deg,rgba(5,7,13,0),rgba(5,7,13,.92) 35%);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  transform:translateY(120%);transition:transform .4s cubic-bezier(.2,.8,.2,1)}
+.sticky.show{transform:none}
+.sticky .tg{max-width:none;padding:17px 20px;font-size:16px;border-radius:16px}
+.sticky .tg svg{width:28px;height:28px}
+
+/* Desktop */
+@media(min-width:820px){
+  .hero{grid-template-columns:1.1fr .9fr;padding:56px 0 80px;gap:56px}
+  .markets,.vals{grid-template-columns:repeat(3,1fr)}
+  .vals{grid-template-columns:repeat(3,1fr)}
+  .tg{width:auto;min-width:440px}
+  .sticky{display:none}
+  body{padding-bottom:0}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .sticky{transform:none}
+}
+</style>
+<!-- Meta Pixel -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init','4562247650714718');
+fbq('init','1636497054885026');
 fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4562247650714718&ev=PageView&noscript=1"></noscript>
-<!-- End Meta Pixel Code -->
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap">
-<style>
-:root{--bg:#0b0f1e;--card:#151b33;--text:#f5f6fb;--muted:#a9b1ce;--yellow:#ffd91a;--green:#25d366;--line:#262e55;--ink:#0b0f1e}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--text);font-family:'Poppins',system-ui,sans-serif;line-height:1.55;overflow-x:hidden}
-.wrap{max-width:760px;margin:0 auto;padding:0 18px}
-.hero{position:relative;padding:28px 0 36px;background:radial-gradient(600px 300px at 85% 0,rgba(225,48,108,.28),transparent 70%),radial-gradient(500px 300px at 0 30%,rgba(24,119,242,.28),transparent 70%)}
-.badge{display:inline-block;background:rgba(255,217,26,.14);color:var(--yellow);border:1px solid rgba(255,217,26,.4);padding:5px 14px;border-radius:99px;font-size:13px;font-weight:600;margin-bottom:14px}
-h1{font-size:clamp(30px,8vw,52px);font-weight:800;line-height:1.12;margin:0 0 16px}
-.y{background:var(--yellow);color:var(--ink);padding:0 10px;border-radius:8px;display:inline-block;transform:rotate(-1.5deg)}
-.b{background:#1877f2;padding:0 10px;border-radius:8px;display:inline-block}
-.r{background:#e62117;padding:0 10px;border-radius:8px;display:inline-block}
-.sub{font-size:18px;color:var(--muted);margin:0 0 22px}
-.sub b{color:var(--yellow)}
-.btn{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--green);color:#06260f;font-weight:800;font-size:18px;text-decoration:none;padding:17px 22px;border-radius:16px;box-shadow:0 10px 28px rgba(37,211,102,.35);transition:transform .15s}
-.btn:active{transform:scale(.98)}
-.btn:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
-.btn svg{width:28px;height:28px;fill:currentColor;flex:none}
-.pulse{animation:p 1.8s ease-out 3}
-@keyframes p{0%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}100%{box-shadow:0 0 0 22px rgba(37,211,102,0)}}
-@media (prefers-reduced-motion:reduce){.pulse{animation:none}html{scroll-behavior:auto}}
-.mini{text-align:center;color:var(--muted);font-size:13px;margin-top:10px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:30px 0 0}
-.pl{border-radius:18px;padding:20px 8px 16px;text-align:center;font-weight:700;font-size:14px;color:#fff;box-shadow:0 10px 24px rgba(0,0,0,.35)}
-.pl svg{width:46px;height:46px;fill:#fff;display:block;margin:0 auto 8px}
-.pl small{display:block;font-weight:500;opacity:.9;margin-top:2px}
-.fb{background:linear-gradient(160deg,#2a8bff,#1260d6)}
-.ig{background:linear-gradient(135deg,#7b3fe4,#e1306c 60%,#fcaf45)}
-.yt{background:linear-gradient(160deg,#ff3b30,#c9150c)}
-.strip{background:var(--yellow);color:var(--ink);font-weight:800;text-align:center;padding:14px;font-size:clamp(16px,4.5vw,22px)}
-section{padding:34px 0 4px}
-h2{font-size:clamp(22px,5.5vw,30px);font-weight:800;margin:0 0 16px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.f{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
-.ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:22px;margin-bottom:8px;background:rgba(255,255,255,.07)}
-.f b{display:block;font-size:15px}
-.f span{color:var(--muted);font-size:13px}
-.steps{list-style:none;margin:0;padding:0;counter-reset:s}
-.steps li{counter-increment:s;display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:10px}
-.steps li::before{content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:var(--yellow);color:var(--ink);font-weight:800;display:grid;place-items:center}
-.steps b{display:block}
-.steps span{color:var(--muted);font-size:14px}
-details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:10px}
-summary{font-weight:700;cursor:pointer}
-details p{margin:8px 0 0;color:var(--muted);font-size:14px}
-.final{background:linear-gradient(135deg,#1b2350,#2a1650);border:1px solid var(--line);border-radius:22px;padding:26px 20px;text-align:center;margin:36px 0 14px}
-.final h2{margin-bottom:8px}
-.final p{color:var(--muted);margin:0 0 18px}
-.note{color:var(--muted);font-size:12px;text-align:center;padding:6px 0 100px}
-.sticky{position:fixed;left:0;right:0;bottom:0;padding:12px 14px calc(12px + env(safe-area-inset-bottom,0px));background:linear-gradient(transparent,var(--bg) 45%);z-index:9}
-.sticky .btn{max-width:760px;margin:0 auto;font-size:16px;padding:14px}
-@media (max-width:420px){.grid{grid-template-columns:1fr}}
-</style>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=1636497054885026&ev=PageView&noscript=1"></noscript>
+<!-- End Meta Pixel -->
 </head>
 <body>
 
-<header class="hero">
-  <div class="wrap">
-    <span class="badge">Account sell karein – paise kamayein</span>
-    <h1>Agar aapke paas <span class="y">koi sa bhi</span> <span class="b">Facebook</span>, Instagram ya <span class="r">YouTube Channel</span> hai</h1>
-    <p class="sub">Aur aap use <b>sell karke paise kamana</b> chahte hain – chahe <b>0 follower</b> hi kyu na ho.</p>
-    <a class="btn pulse wa" href="https://wa.me/919569305038?text=Hi%2C%20mujhe%20apna%20account%20sell%20karna%20hai" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>
-      Learn More – WhatsApp pe contact karein
+<!-- Live-style ticker (illustrative display only) -->
+<div class="ticker" aria-hidden="true"><div class="ticker-track">
+  <span>XAUUSD<b>GOLD</b></span><span>BTCUSD<b>BITCOIN</b></span><span>EURUSD<b>FOREX</b></span><span>GBPUSD<b>FOREX</b></span><span>USDJPY<b>FOREX</b></span><span>GBPJPY<b>FOREX</b></span>
+  <span>XAUUSD<b>GOLD</b></span><span>BTCUSD<b>BITCOIN</b></span><span>EURUSD<b>FOREX</b></span><span>GBPUSD<b>FOREX</b></span><span>USDJPY<b>FOREX</b></span><span>GBPJPY<b>FOREX</b></span>
+</div></div>
+
+<header class="wrap">
+  <nav>
+    <a class="logo" href="#top" aria-label="The Chart Zone FX">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#1e90ff"/><stop offset="1" stop-color="#f5c451"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="16" fill="#0a0f1c" stroke="url(#lg)" stroke-width="2.5"/><path d="M12 44l12-14 10 8 18-22" fill="none" stroke="url(#lg)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="52" cy="16" r="4" fill="#f5c451"/></svg>
+      <span>THE CHART ZONE <em>FX</em></span>
     </a>
-    <p class="mini">Free me details bhejein, price turant jaanein</p>
-    <div class="cards">
-      <div class="pl fb"><svg viewBox="0 0 24 24"><path d="M14 8V6.5c0-.7.3-1 1-1h2V2h-3c-3 0-4.5 1.8-4.5 4.4V8H7v3.5h2.5V22H14V11.5h2.8L17.3 8z"/></svg>Facebook<small>Page</small></div>
-      <div class="pl ig"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5a4.5 4.5 0 1 1 0 9 4.5 4.5 0 0 1 0-9zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM17.3 6a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2z"/></svg>Instagram<small>Account</small></div>
-      <div class="pl yt"><svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3z"/></svg>YouTube<small>Channel</small></div>
-    </div>
-  </div>
+    <a class="nav-cta tg-link" href="https://t.me/+pRvjIn6W1K5hMjU9" target="_blank" rel="noopener noreferrer">JOIN FREE</a>
+  </nav>
 </header>
 
-<div class="strip">0 Follower bhi chalega – sab type ke accounts</div>
+<main id="top">
+<div class="wrap hero">
+  <div>
+    <div class="live"><i></i> Daily market insights on Telegram</div>
+    <h1>Your gateway to <span class="b">Forex,</span> <span class="g">Gold</span> &amp; BTC market insights</h1>
+    <p class="sub">Clean chart analysis and trade ideas on <strong>Forex, XAUUSD and Bitcoin</strong>. Straight to your phone, so you never miss the move.</p>
 
-<main class="wrap">
-  <section>
-    <h2>Kyu humein choose karein</h2>
-    <div class="grid">
-      <div class="f"><div class="ic">💼</div><b>All types of accounts</b><span>Page, profile ya channel – sab chalega</span></div>
-      <div class="f"><div class="ic">👥</div><b>0 follower bhi chalega</b><span>Naya ya purana, koi bhi account</span></div>
-      <div class="f"><div class="ic">🛡️</div><b>Safe &amp; secure process</b><span>Seedhi baat-cheet, clear deal</span></div>
-      <div class="f"><div class="ic">⚡</div><b>Quick payment</b><span>Deal final hote hi payment</span></div>
+    <a class="tg tg-link" href="https://t.me/+pRvjIn6W1K5hMjU9" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 240 240" aria-hidden="true"><circle cx="120" cy="120" r="120" fill="#fff"/><path fill="#1b7fd6" d="M54 118.7c35-15.2 58.4-25.3 70.1-30.2 33.4-13.9 40.3-16.3 44.8-16.4 1 0 3.2.2 4.7 1.4 1.2 1 1.5 2.300 1.700 3.300.2 1 .4 3.100.2 4.800-1.800 19-9.600 65.100-13.600 86.300-1.700 9-5 12-8.200 12.300-7 .6-12.300-4.600-19-9-10.600-6.900-16.600-11.300-26.900-18.100-11.900-7.800-4.200-12.100 2.600-19.100 1.800-1.800 32.500-29.800 33.100-32.300.1-.3.1-1.500-.6-2.100-.7-.6-1.700-.4-2.500-.2-1.100.2-17.900 11.400-50.600 33.500-4.800 3.300-9.100 4.900-13 4.800-4.300-.1-12.500-2.400-18.700-4.400-7.500-2.400-13.500-3.700-13-7.900.3-2.200 3.300-4.400 8.900-6.700z"/></svg>
+      <span>Join Our Telegram Channel</span>
+    </a>
+    <div class="note"><span>Free to join</span><span>Instant access</span><span>No spam</span></div>
+  </div>
+
+  <div class="board" aria-hidden="true">
+    <div class="board-h"><b>XAUUSD <small>GOLD</small></b><span>▲ Trending</span></div>
+    <svg viewBox="0 0 400 240">
+      <defs>
+        <linearGradient id="ar" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1e90ff" stop-opacity=".45"/><stop offset="1" stop-color="#1e90ff" stop-opacity="0"/></linearGradient>
+        <linearGradient id="ln" x1="0" x2="1"><stop offset="0" stop-color="#00c2ff"/><stop offset="1" stop-color="#f5c451"/></linearGradient>
+      </defs>
+      <g stroke="rgba(120,160,255,.12)"><path d="M0 40H400M0 90H400M0 140H400M0 190H400"/></g>
+      <path d="M0 200 L40 180 L70 190 L110 150 L150 160 L190 110 L230 125 L270 80 L310 95 L350 45 L400 30 L400 240 L0 240Z" fill="url(#ar)"/>
+      <path d="M0 200 L40 180 L70 190 L110 150 L150 160 L190 110 L230 125 L270 80 L310 95 L350 45 L400 30" fill="none" stroke="url(#ln)" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <g>
+        <g stroke-width="2"><path stroke="#22d38a" d="M60 150v50M100 130v45M180 95v50M260 65v45M340 35v45"/><path stroke="#ff5c6c" d="M80 160v40M140 140v40M220 100v50M300 80v45"/></g>
+        <g><rect x="54" y="165" width="12" height="25" fill="#22d38a"/><rect x="94" y="145" width="12" height="22" fill="#22d38a"/><rect x="174" y="110" width="12" height="25" fill="#22d38a"/><rect x="254" y="80" width="12" height="22" fill="#22d38a"/><rect x="334" y="50" width="12" height="22" fill="#22d38a"/>
+        <rect x="74" y="170" width="12" height="20" fill="#ff5c6c"/><rect x="134" y="150" width="12" height="22" fill="#ff5c6c"/><rect x="214" y="112" width="12" height="28" fill="#ff5c6c"/><rect x="294" y="90" width="12" height="25" fill="#ff5c6c"/></g>
+      </g>
+      <path d="M0 110H400" stroke="#f5c451" stroke-dasharray="6 6" stroke-opacity=".7"/>
+      <rect x="318" y="98" width="76" height="24" rx="6" fill="#f5c451"/><text x="356" y="115" text-anchor="middle" font-size="12" font-weight="700" fill="#111" font-family="Arial">KEY LEVEL</text>
+    </svg>
+    <div class="tabs"><span>15M</span><span>1H</span><span>4H</span><span>1D</span></div>
+  </div>
+</div>
+
+<!-- Markets -->
+<section style="padding-top:20px">
+  <div class="wrap">
+    <h2>Markets we cover</h2>
+    <p class="lead">Three focused markets. One channel.</p>
+    <div class="markets">
+      <article class="mk fx">
+        <svg class="sp" viewBox="0 0 110 44" aria-hidden="true"><path d="M0 34L18 26 32 30 50 16 66 22 86 8 110 12" fill="none" stroke="#00c2ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="ic">$€</div><h3>Forex</h3>
+        <p>Major pairs and cross pairs, from London to New York.</p>
+        <div class="pair">EURUSD · GBPUSD · USDJPY</div>
+      </article>
+      <article class="mk au">
+        <svg class="sp" viewBox="0 0 110 44" aria-hidden="true"><path d="M0 36L20 30 34 32 52 18 70 20 90 6 110 4" fill="none" stroke="#f5c451" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="ic">Au</div><h3>Gold (XAUUSD)</h3>
+        <p>Key levels and setups on the market traders watch most.</p>
+        <div class="pair">XAUUSD · Spot Gold</div>
+      </article>
+      <article class="mk bt">
+        <svg class="sp" viewBox="0 0 110 44" aria-hidden="true"><path d="M0 28L16 34 34 14 50 22 68 6 86 18 110 8" fill="none" stroke="#f7931a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="ic">₿</div><h3>Bitcoin (BTC)</h3>
+        <p>Trend, structure and momentum on crypto's leading asset.</p>
+        <div class="pair">BTCUSD · 24/7 Market</div>
+      </article>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
-    <h2>Kaise kaam karta hai</h2>
-    <ol class="steps">
-      <li><div><b>WhatsApp pe message karein</b><span>Account ka naam aur platform bhejein.</span></div></li>
-      <li><div><b>Hum account check karte hain</b><span>Aapko price batate hain.</span></div></li>
-      <li><div><b>Deal pakki karein</b><span>Account transfer ka process samjhaya jata hai.</span></div></li>
-      <li><div><b>Quick payment payein</b><span>Transfer ke baad payment mil jata hai.</span></div></li>
-    </ol>
-  </section>
+<!-- Value -->
+<section style="padding-top:10px">
+  <div class="wrap">
+    <h2>Why join</h2>
+    <p class="lead">Everything you need, nothing you don't.</p>
+    <div class="vals">
+      <div class="val"><div><b>Chart analysis</b><span>Clear levels and market structure you can read at a glance.</span></div></div>
+      <div class="val"><div><b>Trade ideas</b><span>Timely setups on Forex, Gold and BTC.</span></div></div>
+      <div class="val"><div><b>Market updates</b><span>Know what's moving the charts, as it happens.</span></div></div>
+    </div>
+  </div>
+</section>
 
-  <section>
-    <h2>Aam sawal</h2>
-    <details><summary>Kya 0 follower wala account bhi bik jayega?</summary><p>Haan, humein har tarah ke account chalte hain. Details WhatsApp pe bhejein.</p></details>
-    <details><summary>Kaun se platform lete hain?</summary><p>Facebook Page, Instagram Account aur YouTube Channel.</p></details>
-    <details><summary>Payment kab milta hai?</summary><p>Deal final aur account transfer hone ke baad quick payment kiya jata hai.</p></details>
-    <details><summary>Contact kaise karein?</summary><p>Neeche ya upar ke green button se seedha WhatsApp pe message bhejein.</p></details>
-  </section>
-
+<!-- Final CTA -->
+<div class="wrap">
   <div class="final">
-    <h2>Aaj hi apne account ka price jaanein</h2>
-    <p>Bas WhatsApp pe details bhejein, baaki hum sambhal lenge.</p>
-    <a class="btn wa" href="https://wa.me/919569305038?text=Hi%2C%20mujhe%20apna%20account%20sell%20karna%20hai" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.8-.1 1.4z"/></svg>
-      Contact kren
+    <h2>The next move starts<br>in the channel</h2>
+    <p>Join traders following Forex, Gold and Bitcoin with The Chart Zone FX.</p>
+    <a class="tg tg-link" href="https://t.me/+pRvjIn6W1K5hMjU9" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 240 240" aria-hidden="true"><circle cx="120" cy="120" r="120" fill="#fff"/><path fill="#1b7fd6" d="M54 118.7c35-15.2 58.4-25.3 70.1-30.2 33.4-13.9 40.3-16.3 44.8-16.4 1 0 3.2.2 4.7 1.4 1.2 1 1.5 2.3 1.7 3.3.2 1 .4 3.1.2 4.8-1.8 19-9.6 65.1-13.6 86.3-1.7 9-5 12-8.2 12.3-7 .6-12.3-4.6-19-9-10.6-6.9-16.6-11.3-26.9-18.1-11.9-7.8-4.2-12.1 2.6-19.1 1.8-1.8 32.5-29.8 33.100-32.3.1-.3.1-1.5-.6-2.1-.7-.6-1.7-.4-2.5-.2-1.1.2-17.9 11.4-50.6 33.5-4.8 3.3-9.1 4.9-13 4.8-4.3-.1-12.5-2.4-18.7-4.4-7.5-2.4-13.5-3.7-13-7.9.3-2.2 3.3-4.4 8.9-6.7z"/></svg>
+      <span>Join Our Telegram Channel</span>
     </a>
   </div>
-  <p class="note">Final price account ki details dekhkar tay hota hai. Facebook, Instagram aur YouTube ki policies ka dhyan rakhna aapki zimmedari hai.</p>
+</div>
 </main>
 
-<div class="sticky"><a class="btn wa" href="https://wa.me/919569305038?text=Hi%2C%20mujhe%20apna%20account%20sell%20karna%20hai" target="_blank" rel="noopener">WhatsApp pe contact karein</a></div>
+<footer>
+  <div class="wrap">
+    <div class="risk">
+      <b>RISK DISCLAIMER</b>
+      Trading Forex, Gold (XAUUSD), cryptocurrencies and other leveraged products carries a high level of risk and may not be suitable for all investors. You can lose some or all of your invested capital. All content shared by The Chart Zone FX is for educational and informational purposes only and does not constitute financial advice, investment advice or a recommendation to buy or sell any instrument. Past performance is not indicative of future results. Never trade with money you cannot afford to lose, and consult a licensed financial advisor before making any financial decisions. You are solely responsible for your own trading decisions.
+    </div>
+    <div class="copy"><span>© <span id="yr">2026</span> The Chart Zone FX. All rights reserved.</span><span>Forex · Gold · Bitcoin</span></div>
+  </div>
+</footer>
+
+<!-- Sticky mobile CTA -->
+<div class="sticky" id="sticky">
+  <a class="tg tg-link" href="https://t.me/+pRvjIn6W1K5hMjU9" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 240 240" aria-hidden="true"><circle cx="120" cy="120" r="120" fill="#fff"/><path fill="#1b7fd6" d="M54 118.7c35-15.2 58.4-25.3 70.1-30.2 33.4-13.9 40.3-16.3 44.8-16.4 1 0 3.2.2 4.7 1.4 1.2 1 1.5 2.3 1.7 3.3.2 1 .4 3.1.2 4.8-1.8 19-9.6 65.1-13.6 86.3-1.7 9-5 12-8.2 12.3-7 .6-12.3-4.6-19-9-10.6-6.9-16.6-11.3-26.9-18.1-11.9-7.8-4.2-12.1 2.6-19.1 1.8-1.8 32.5-29.8 33.1-32.3.1-.3.1-1.5-.6-2.1-.7-.6-1.7-.4-2.5-.2-1.1.2-17.9 11.4-50.6 33.5-4.8 3.3-9.1 4.9-13 4.8-4.3-.1-12.5-2.4-18.7-4.4-7.5-2.4-13.5-3.7-13-7.9.3-2.2 3.3-4.4 8.9-6.7z"/></svg>
+    <span>Join Our Telegram Channel</span>
+  </a>
+</div>
 
 <script>
-// Meta Pixel: har WhatsApp button click par Lead + Contact event
-document.querySelectorAll('a.wa').forEach(function(a){
-  a.addEventListener('click',function(){
-    if(window.fbq){fbq('track','Lead');fbq('track','Contact');}
-  });
-});
+/* ====== SET YOUR TELEGRAM LINK HERE (one place) ====== */
+var TELEGRAM_URL = "https://t.me/+pRvjIn6W1K5hMjU9";
+/* ===================================================== */
+(function(){
+  var links=document.querySelectorAll('.tg-link');
+  for(var i=0;i<links.length;i++){
+    links[i].href=TELEGRAM_URL;
+    links[i].addEventListener('click',function(){
+      try{if(window.fbq){fbq('track','Lead',{content_name:'Telegram Channel Join'});fbq('trackCustom','TelegramJoinClick');}}catch(e){}
+    });
+  }
+  document.getElementById('yr').textContent=new Date().getFullYear();
+  var s=document.getElementById('sticky'),hero=document.querySelector('.hero .tg');
+  if('IntersectionObserver' in window&&hero){
+    new IntersectionObserver(function(e){s.classList.toggle('show',!e[0].isIntersecting);},{threshold:0}).observe(hero);
+  }else{s.classList.add('show');}
+})();
 </script>
 </body>
 </html>
